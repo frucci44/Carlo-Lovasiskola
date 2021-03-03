@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box; margin: 0;
+}
+
+body{
+    background: bisque;
+}
+
+.carousel{
+    max-width: 1920px;
+    width: 90%;               
+    height: 60vh;  
+    margin: 100px auto 0 auto;
+    box-shadow: 0 30px 40px -20px rgba(0, 0, 0,0.9);
+    position: relative;
+    overflow: hidden;
+    border-radius: 2%;
+}
+@media(orientation:portrait){
+    .carousel{ height: 30vh;}
+}
+
+
+.carousel div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: center center;
+    background-size: cover;
+    opacity: 0;
+
+}
+
+.carousel div:nth-child(1){
+    background-image: url(../img/photo-1598974357801-cbca100e65d3.jpeg);
+}
+
+.carousel div:nth-child(2){
+    background-image: url(../img/photo-1545780699-605328d5e41b.jpeg);
+    animation-delay:  4s;
+}
+
+.carousel div:nth-child(3){
+    background-image: url(../img/photo-1553284965-fa61e9ad4795.jpeg);
+    animation-delay:  8s;
+}
+
+.usztatas div{ animation: fade 16s infinite}
+@keyframes fade {
+    0% {opacity: 0}
+    10%{opacity: 1}
+    35%{opacity: 1}
+    40%{opacity: 0}
+}
+

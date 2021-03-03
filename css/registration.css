@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    src: url(../fonts/Roboto-Light.ttf) format(ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: 'Italianno', cursive;
+    font-size: 70px;
+}
+
+.container {
+  padding: 16px;
+  margin: auto;
+  max-width: 50%;
+  text-align: center;
+  border: none;
+  font-family: sans-serif;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.registerbtn {
+  background-color: coral;
+  color: white;
+  font-family: sans-serif;
+  font-size: 20px;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.8;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+a {
+  color: dodgerblue;
+}
+
+@media (min-width: 360px) and (max-width: 900px) {
+    .container {
+        padding: 4px;
+        margin: auto;
+        max-width: 290px;
+        text-align: center;
+        border: none;
+        font-family: sans-serif;
+      }
+      
+      input[type=text], input[type=password] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+      }
+      
+      input[type=text]:focus, input[type=password]:focus {
+        background-color: #ddd;
+        outline: none;
+      }
+      
+      hr {
+        border: 1px solid #f1f1f1;
+        margin-bottom: 25px;
+      }
+      
+      .registerbtn {
+        background-color: coral;
+        color: white;
+        font-family: sans-serif;
+        font-size: 20px;
+        padding: 16px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.8;
+      }
+      
+      .registerbtn:hover {
+        opacity:1;
+      }
+      
+      a {
+        color: dodgerblue;
+      }
+
+}
