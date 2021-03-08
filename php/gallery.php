@@ -11,7 +11,7 @@
 </body>
 <div class="row">
         <div class="column">
-            <img src="../img/gallery2.jpg" alt="ugratas" onclick="myFunction(this);">
+            <img  src="../img/gallery2.jpg" alt="ugratas" onclick="myFunction(this);">
         </div>
         <div class="column">
             <img src="../img/gallery21.jpg" alt="ugratas" onclick="myFunction(this);">

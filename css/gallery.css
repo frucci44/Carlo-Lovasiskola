@@ -53,3 +53,6 @@ body{
     40%{opacity: 0}
 }
 
+img {
+    border-radius: 20%;
+}
