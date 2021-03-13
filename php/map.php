@@ -3,9 +3,9 @@
     <script src="../lib/openstreetmap/OpenLayers.js"></script>
     <script>
         $(function(){
-            var latd = 47.1953;
-            var lond = 18.9193;
-            var zoom = 13;
+            var latd = 47.18626333761132;
+            var lond = 18.937016072679583;
+            var zoom = 15;
 
             var fromProjection = new OpenLayers.Projection("EPSG:4326");   // Transform from WGS 1984
             var toProjection = new OpenLayers.Projection("EPSG:900913"); // to Spherical Mercator Projection
@@ -30,7 +30,7 @@
     <div class="row">
         <div class="col-12 col-md-6">
             <div id="map" style="height: 450px;"></div>
-            <small><a href="https://www.openstreetmap.org/?mlat=47.1953&amp;mlon=18.9193#map=15/47.1953/18.9193" target="_blank">Nagyobb térkép</a></small>
+            <small><a href="https://www.openstreetmap.org/?mlat=47.18626333761132&amp;mlon=18.937016072679583#map=15/47.18626333761132/18.937016072679583" target="_blank">Nagyobb térkép</a></small>
         </div>
         <div class="col-12 col-md-6">
             <table>
