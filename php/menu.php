@@ -10,25 +10,25 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link" href=../php/index.php">Főoldal</a>
+        <a class="nav-link" href="<?=$mappa ?? '' ?>index.php">Főoldal</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="../php/introduction.php">Bemutatkozás</a>
+        <a class="nav-link" href="<?=$mappa ?? '' ?>introduction.php">Bemutatkozás</a>
       </li>
       
         
       
       <li class="nav-item">
-        <a class="nav-link" href="../php/gallery.php">Galéria</a>
+        <a class="nav-link" href="<?=$mappa ?? '' ?>gallery.php">Galéria</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Szolgáltatás</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="../php/map.php">Térkép</a>
+        <a class="nav-link" href="<?=$mappa ?? '' ?>map.php">Térkép</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="../php/registration.php">Regisztráció</a>
+        <a class="nav-link" href="<?=$mappa ?? '' ?>registration.php">Regisztráció</a>
       </li>
       <li class="list-item">
             <?php include "login.php";?>

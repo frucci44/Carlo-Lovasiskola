@@ -1,4 +1,4 @@
-<?php include "_head.php" ?>
+
 <?php include "menu.php"; ?>
     <script src="../lib/openstreetmap/OpenLayers.js"></script>
     <script>

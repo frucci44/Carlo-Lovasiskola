@@ -1,7 +1,7 @@
 <?php
     $mappa = "php/";
 ?>
-<?php include "php/_head.php" ?>
+
 <?php include "php/menu.php" ?>
 
     <div class="container">

@@ -1,4 +1,4 @@
-<?php include "_head.php" ?>
+
 <?php include 'menu.php'; ?>
 
     <div class="container">

@@ -1,27 +1,58 @@
-<!DOCTYPE html>
-<html lang="hu">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/menu.css">
-    <link rel="stylesheet" href="../css/registration.css">
-    <title>Carlo regisztráció</title>
-</head>
-
-<body>
-    <div>
-        <?php include "menu.php"; ?>
-    </div>
-    <div>
-        <form action="action_page.php">
+<?php include 'menu.php'; ?>
+       
             <div class="container">
+           
 
-                <h1>Regisztráció</h1>
-                <p>Kérem minden részt töltsön ki.</p>
+                <h1 class="text-center">Regisztráció</h1>
+                <p class="text-center">Kérem minden részt töltsön ki.</p>
                 <hr>
+                <form action="action_page.php">
+                    <div class="row">
+                        <div class="col-12 col-md-4 text-center text-md-left">
+                            <label for="nev" class="font-weight-bold">Teljes név :</label>
+                                    </div>
+                        <div class="col-12 col-md-8">
+                            <input type="text" name="nev" id="nev">
+
+
+                                    </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                                    </div>
+                        <div class="col-12 col-md-8">
+
+                                    </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                                    </div>
+                        <div class="col-12 col-md-8">
+
+                                    </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                                    </div>
+                        <div class="col-12 col-md-8">
+
+                                    </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                                    </div>
+                        <div class="col-12 col-md-8">
+
+                                    </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                                    </div>
+                        <div class="col-12 col-md-8">
+
+                                    </div>
+                    </div>
+
 
                 <label for="email"><b>Email:</b></label>
                 <input type="text" placeholder="Email megadása" name="email" id="email" required>
@@ -37,11 +68,9 @@
                 <button type="submit" class="registerbtn">REGISZTRÁLOK</button>
             </div>
 
-            <div class="container">
-                <p>Van már kész accountja? <a href="#">Bejelentkezek</a>.</p>
-            </div>
+          
         </form>
-    </div>
+    
 </body>
 
 </html>
