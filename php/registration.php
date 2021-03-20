@@ -6,66 +6,72 @@
                 <h1 class="text-center">Regisztráció</h1>
                 <p class="text-center">Kérem minden részt töltsön ki.</p>
                 <hr>
-                <form action="action_page.php">
+                <form method="post" action="register.php">
                     <div class="row">
                         <div class="col-12 col-md-4 text-center text-md-left">
-                            <label for="nev" class="font-weight-bold">Teljes név :</label>
-                                    </div>
+                            <label for="nev" class="font-weight-bold">Teljes név:</label>
+                        </div>
                         <div class="col-12 col-md-8">
-                            <input type="text" name="nev" id="nev">
-
-
-                                    </div>
+                            <input type="text" name="nev" id="nev" required>
+                        </div>
                     </div>
+
+                    <div class="row">
+                        <div class="col-12 col-md-4 text-center text-md-left">
+                            <label for="email" class="font-weight-bold">E-mail cím:</label>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-md-4 text-center text-md-left">
+                            <label for="tel" class="font-weight-bold">Telefonszám:</label>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <input type="tel" name="tel" id="tel" required>
+                        </div>
+                    </div> 
+                    
+                    <div class="row">
+                        <div class="col-12 col-md-4 text-center text-md-left">
+                            <label for="jelszo" class="font-weight-bold">Jelszó:</label>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <input type="password" name="jelszo" id="jelszo" required>
+                        </div>
+                    </div> 
+                    
+                    <div class="row">
+                        <div class="col-12 col-md-4 text-center text-md-left">
+                            <label for="jelszo2" class="font-weight-bold">Jelszó újra:</label>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <input type="password" name="jelszo2" id="jelszo2" required>
+                        </div>
+                    </div> 
+                    
                     <div class="row">
                         <div class="col-12 col-md-4">
-                                    </div>
+                        </div>
                         <div class="col-12 col-md-8">
-
-                                    </div>
+                            <p>Fiók létrehozásával Ön elfogadja a következőket: <a href="#">Feltételek és adatvédelem</a>.</p>
+                            
+                        </div>
                     </div>
+
                     <div class="row">
-                        <div class="col-12 col-md-4">
-                                    </div>
-                        <div class="col-12 col-md-8">
-
-                                    </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 col-md-4">
-                                    </div>
-                        <div class="col-12 col-md-8">
-
-                                    </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 col-md-4">
-                                    </div>
-                        <div class="col-12 col-md-8">
-
-                                    </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 col-md-4">
-                                    </div>
-                        <div class="col-12 col-md-8">
-
-                                    </div>
+                        <div class="col-12 col-md-10">
+                        </div>
+                        <div class="col-12 col-md-2">
+                            <button type="submit" class="btn btn-secondary">Regisztrálok</button>
+                        </div>
                     </div>
 
 
-                <label for="email"><b>Email:</b></label>
-                <input type="text" placeholder="Email megadása" name="email" id="email" required>
-
-                <label for="psw"><b>Jelszó:</b></label>
-                <input type="password" placeholder="Jelszó megadása" name="psw" id="psw" required>
-
-                <label for="psw-repeat"><b>Jelszó ismét:</b></label>
-                <input type="password" placeholder="Jelszó ismételt megadása" name="psw-repeat" id="psw-repeat" required>
-                <hr>
-
-                <p>Fiók létrehozásával Ön elfogadja a következőket: <a href="#">Feltételek és adatvédelem</a>.</p>
-                <button type="submit" class="registerbtn">REGISZTRÁLOK</button>
+               
+                
             </div>
 
           
