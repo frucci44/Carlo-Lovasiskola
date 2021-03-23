@@ -22,7 +22,7 @@
         <a class="nav-link" href="<?=$mappa ?? '' ?>gallery.php">Galéria</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Szolgáltatás</a>
+        <a class="nav-link" href="<?=$mappa ?? '' ?>services.php">Szolgáltatásaink</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="<?=$mappa ?? '' ?>map.php">Térkép</a>
