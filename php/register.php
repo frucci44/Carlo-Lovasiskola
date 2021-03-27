@@ -11,6 +11,29 @@ $jelszou=$_POST['jelszou'];
 if ($nev && $email && $tel && $jelszo && $jelszou) {
 
 if ($jelszo == $jelszou) {
+    $jelszo_hash = md5($jelszo);
+    $sql="INSERT INTO felhasznalo (email, jelszo, aktiv, nev, telefonszam) values ('$email', '$jelszo_hash', 1, '$nev', '$tel')";
+
+   $darabszam = $db->query($sql);
+   if ($darabszam == 0) {
+    ?>
+    <h2>Sikertelen Regisztráció! </h2>
+    <a href="#" onclick="location.reload()"> Újrapróbálkozás! </a>
+    <?php
+
+   }
+   else {
+    ?>
+    <h2>Sikeres Regisztráció! </h2>
+    <a href="#"> Belépés </a>
+    <?php
+
+   }
+
+
+
+    
+    
 
 }
 else {
