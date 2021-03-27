@@ -1,7 +1,7 @@
 <?php 
 $szerver="127.0.0.1";
 $felhasznalo= "root";
-$jelszo= "root";
+$jelszo= "";
 $adatbazis= "lovarda";
 
 $db = new  mysqli($szerver , $felhasznalo , $jelszo , $adatbazis);

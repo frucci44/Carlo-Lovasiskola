@@ -253,7 +253,7 @@ input {
     background-color: #3CD8C1;
     position: relative;
 }
-.heading{}
+
 input[type="text"] {
     border: none;
     width: 100%;
@@ -281,7 +281,7 @@ textarea {
     border: none;
     width: 100%;
     padding: 10px;
-  
+} 
 
 input {
     width: 100%;
