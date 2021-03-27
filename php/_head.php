@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="hu" data-scroll="0">
 
 <head>
     <meta charset="UTF-8">

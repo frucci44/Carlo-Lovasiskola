@@ -3,15 +3,88 @@
     src: url(../fonts/Roboto-Light.ttf) format(ttf);
 }
 
+.navbar {
+    position: fixed;
+    background-color: #fafafa;
+    z-index: 100;
+
+    width: 100%;
+    transition: max-height 100ms linear; 
+    max-height: 85px;
+}
+
+html:not([data-scroll='0']) nav {
+   max-height: 50px;
+   box-shadow: 0 -5px 10px 10px lightgrey;
+}
+
+html:not([data-scroll='0']) .logo {
+    max-height: 30px;
+}
+
+.logo {
+    transition: max-height 1s ease; 
+    max-height: 60px;
+}
+
+.head-padding {
+    padding-top: 85px;
+    background-color: #fafafa;
+}
+
+@media (min-width: 500px) {
+    .navbar-brand {
+        font-size: 230%;
+    }
+}
+
+@media (max-width: 499px) {
+    html:not([data-scroll='0']) .logo {
+        margin-top: -10px !important;
+    }
+}
+
+
+
+
+
 header {
     font-family: 'Lobster', cursive;
-    background-image: url(../img/680154.jpg);
-    background-position: center;
-    background-size: cover;
-    color: burlywood;
+    color: #a46e28;
     padding: 60px;
     font-size: 30px;
 } 
+
+header .backg {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 85px;
+    z-index: -1;
+    opacity: 0.3;
+    background-image: url(../img/680154.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+@media (min-width: 712px) {
+    header .backg {
+        height: 200px;
+    }
+}
+
+@media (min-width: 445px) and (max-width: 711px) {
+    header .backg {
+        height: 280px;
+    }
+}
+
+@media (max-width: 444px) {
+    header .backg {
+        height: 350px;
+    }
+}
 
 body {
     background-color: mistyrose;
@@ -32,19 +105,11 @@ input:focus, button:focus, submit:focus {
     text-decoration: none;
 }
 
-@media (min-width: 500px) {
-    .navbar-brand {
-        font-size: 230%;
-    }
-}
 
 
 
-.navbar {
-    background-color: darksalmon;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-}
+
+
 
 .nav-item {
     padding: 0 5px;
@@ -54,7 +119,7 @@ input:focus, button:focus, submit:focus {
     -ms-transform: scale(1.2);
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
-    color: azure;
+    color: #a23b1b;
     transition: all 0.3s ease-in-out;
 }
 
@@ -218,3 +283,11 @@ textarea {
     padding: 10px;
   
 
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
