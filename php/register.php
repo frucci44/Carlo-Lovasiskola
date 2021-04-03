@@ -25,7 +25,7 @@ if ($jelszo == $jelszou) {
    else {
     ?>
     <h2>Sikeres Regisztráció! </h2>
-    <a href="#"> Belépés </a>
+    <a href="login.php"> Belépés </a>
     <?php
 
    }

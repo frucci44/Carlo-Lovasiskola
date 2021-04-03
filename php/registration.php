@@ -62,7 +62,7 @@
                                     </div>
                         <div class="col-12 col-md-8 text-center text-md-left">
                         <p>Fiók létrehozásával Ön elfogadja a következőket: <a href="#">Feltételek és adatvédelem</a>.</p>
-                            <button class="btn btn-secondary"  style="margin-bottom:20px;type="submit" >Regisztráció</button>
+                            <button class="btn btn-secondary"  style="margin-bottom:20px;" type="submit" >Regisztráció</button>
 
                                     </div>
                     </div>

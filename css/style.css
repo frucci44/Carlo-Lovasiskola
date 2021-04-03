@@ -291,3 +291,12 @@ input {
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
+
+.reg {
+    text-decoration: underline;
+    color: blue !important;
+}
+
+.nagyobb {
+font-size: 20px;
+}

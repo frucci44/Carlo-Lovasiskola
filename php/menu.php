@@ -1,3 +1,7 @@
+
+<?php
+session_start();
+?>
 <?php include "_head.php" ?>
 <script>
   $(function(){
@@ -13,6 +17,15 @@
 
   <a class="navbar-brand" href="<?=$mappa ?? '' ?>../index.php">
     <img class="logo" src="<?=$mappa ?? '' ?>../img/logo/logo_atlatszo.png" />
+    <?php 
+    if (isset ($_SESSION['nev'] )) {
+      ?>
+<span  class="nagyobb">Szia <?=$_SESSION['nev'] ?>!</span> 
+    <?php
+
+    }
+    ?>
+
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,7 +50,22 @@
         <a class="nav-link" href="<?=$mappa ?? '' ?>map.php">Térkép</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="<?=$mappa ?? '' ?>registration.php">Regisztráció</a>
+      <?php
+      if (isset ($_SESSION['nev'] )) {
+        ?>
+<a class="nav-link" href="<?=$mappa ?? '' ?>logout.php">Kijelentkezés</a>
+      <?php
+
+      }
+      else {
+        ?>
+ <a class="nav-link" href="<?=$mappa ?? '' ?>login.php">Bejelentkezés</a>
+      <?php
+
+      }
+      
+      ?>
+       
       </li>
     </ul>
   </div>
