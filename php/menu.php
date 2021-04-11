@@ -1,7 +1,11 @@
 
 <?php
 session_start();
+function benvanejelentkezve() { 
+  return (isset ($_SESSION['nev']));
+}
 ?>
+
 <?php include "_head.php" ?>
 <script>
   $(function(){
@@ -18,7 +22,7 @@ session_start();
   <a class="navbar-brand" href="<?=$mappa ?? '' ?>../index.php">
     <img class="logo" src="<?=$mappa ?? '' ?>../img/logo/logo_atlatszo.png" />
     <?php 
-    if (isset ($_SESSION['nev'] )) {
+    if (benvanejelentkezve() ) {
       ?>
 <span  class="nagyobb">Szia <?=$_SESSION['nev'] ?>!</span> 
     <?php

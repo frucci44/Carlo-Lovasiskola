@@ -61,7 +61,7 @@
                         <div class="col-12 col-md-4">
                                     </div>
                         <div class="col-12 col-md-8 text-center text-md-left">
-                        <p>Fiók létrehozásával Ön elfogadja a következőket: <a href="#">Feltételek és adatvédelem</a>.</p>
+                        <p>Fiók létrehozásával Ön elfogadja a következőket: <a href="https://www.scolar.hu/adatkezelesi_tajekoztato?utm_source=google&utm_medium=cpc&utm_campaign=2021-03-25_search_ads&gclid=CjwKCAjw9r-DBhBxEiwA9qYUpbsdGPVKQM8L3OYnW_nTCgWjYYBLDKCfs5CTKlSaECg8QrqJ0v-8ihoCq2UQAvD_BwE" target="_blank">Feltételek és adatvédelem</a>.</p>
                             <button class="btn btn-secondary"  style="margin-bottom:20px;" type="submit" >Regisztráció</button>
                          
  
