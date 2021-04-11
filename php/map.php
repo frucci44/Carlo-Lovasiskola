@@ -33,22 +33,36 @@
             <small><a href="https://www.openstreetmap.org/?mlat=47.18626333761132&amp;mlon=18.937016072679583#map=15/47.18626333761132/18.937016072679583" target="_blank">Nagyobb térkép</a></small>
         </div>
         <div class="col-12 col-md-6">
-            <table>
-                <tr>
-                    <th>Címünk:</th>
-                    <th>Nyitva tartás:</th>
-                </tr>
-                <tr>
-                    <th>Ráckeve 2300</th>
-
-                </tr>
-                <tr>
-                    <th>Sillingi út 26</th>
-                </tr>
-                <tr>
-                    <th>Sillingi út 26</th>
-                </tr>
-            </table>
+        <table class="table table-sm">
+  <thead>
+    <tr>
+      <th scope="col">Címünk:</th>
+      <th scope="col">Nyitva tartás:</th>
+      <th scope="col">Telefonszám:</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">2300 
+      </th>
+      <td>Hétfőtől</td>
+      <td>Kirchner</td>
+      
+    </tr>
+    <tr>
+      <th scope="row">Ráckeve</th>
+      <td>Vasárnapig</td>
+      <td>Szilvia</td>
+      
+    </tr>
+    <tr>
+      <th scope="row">Sillingi u. 26.</th>
+      <td >08:00-19:00</td>
+      <td>☎ 06-30-314-4065</td>
+    </tr>
+  </tbody>
+</table>
         </div>
     </div>
 </body>

@@ -22,7 +22,7 @@
             <div class="col">
                 <div class="box">
                     <div class="box-content">
-                        <b style='text-align:justify'  >
+                        <b style='text-align:justify'class="shadow"  >
                             A Carlo Lovassport Egyesület 2012ben alakult ráckevei székhellyel. Célunk egy olyan lovas közösség összekovácsolása ahol mindenki kortól és nemtől függetlenül élvezheti a lovak és a természet közeli élet előnyeit. Fő profilunk az alapos lovas oktatás ezen belül pedig az utánpótlás nevelés. Képzett pónikkal és lovakkal dolgozunk, így tanítványainkat az alapoktól kezdve akár a versenyszerű lovaglásig tudjuk kísérni. Lovasaink számos versenyen eredményességükkel bizonyították hogy a kemény munkánknak igenis beérik a gyümölcse.
                             Munkánkat alaposan és alázattal végezzük, hogy lovak a lehető legjobb bánásmódban részesüljenek.
                             Lovardánk, amit folyamatosan építgetünk, fejlesztgetünk Ráckeve határában autóval és akár tömegközlekedéssel is könnyen megközelíthető helyen van.

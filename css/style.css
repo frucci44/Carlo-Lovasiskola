@@ -131,7 +131,14 @@ input:focus, button:focus, submit:focus {
 h2{
     font-family: 'Italianno', cursive;
     font-size: 55px;
+    
 }
+
+
+.shadow {
+    box-shadow: 10px 10px 5px grey;
+}
+
 
 /* OpenStreetmap fix */
 .olControlAttribution {
@@ -143,7 +150,9 @@ h2{
   
 
 }
-
+img {
+    border-radius: 8px;
+  }
 .bemutatkep {
     width: 100%;
 }
