@@ -47,3 +47,4 @@ if (  $email && $jelszo ) {
                
     
     
+                <?php include 'footer.php'; ?>

@@ -9,3 +9,4 @@ session_destroy();
 <?php include 'menu.php'; ?>
 <h1>Sikeres Kijelentkezés!</h1>
 
+<?php include 'footer.php'; ?>

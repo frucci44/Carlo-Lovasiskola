@@ -31,19 +31,6 @@ body{
 
 }
 
-.carousel div:nth-child(1){
-    background-image: url(../img/photo-1598974357801-cbca100e65d3.jpeg);
-}
-
-.carousel div:nth-child(2){
-    background-image: url(../img/photo-1545780699-605328d5e41b.jpeg);
-    animation-delay:  4s;
-}
-
-.carousel div:nth-child(3){
-    background-image: url(../img/photo-1553284965-fa61e9ad4795.jpeg);
-    animation-delay:  8s;
-}
 
 .usztatas div{ animation: fade 16s infinite}
 @keyframes fade {

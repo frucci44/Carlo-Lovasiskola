@@ -96,3 +96,5 @@ if($lovak->num_rows == 0) {
    ?>
 
    </div>
+
+   <?php include 'footer.php'; ?>

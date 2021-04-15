@@ -167,5 +167,7 @@ Ha szeretnél időpontot foglalni akkor <a href="login.php" class="reg">Jelentke
   }
   ?>
   </div>
+
+  <?php include 'footer.php'; ?>
   
   

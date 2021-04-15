@@ -25,7 +25,7 @@
 
 
     <div class="container">
-    <h2>Carlo a térképen</h2>
+    <h2>Carlo a térképen:</h2>
 
     <div class="row">
         <div class="col-12 col-md-6">
@@ -67,3 +67,5 @@
     </div>
 </body>
 </html>
+
+<?php include 'footer.php'; ?>

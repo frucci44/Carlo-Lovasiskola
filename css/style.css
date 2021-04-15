@@ -47,10 +47,9 @@ html:not([data-scroll='0']) .logo {
 
 
 
-
 header {
     font-family: 'Lobster', cursive;
-    color: #a46e28;
+    color: #a56c22;
     padding: 60px;
     font-size: 30px;
 } 
@@ -104,11 +103,6 @@ input:focus, button:focus, submit:focus {
     font-size: 150%;
     text-decoration: none;
 }
-
-
-
-
-
 
 
 .nav-item {
@@ -180,7 +174,7 @@ input {
   
   /* Hide the images by default */
   .mySlides {
-    display: none;
+    display:list-item;
   }
   
   /* Add a pointer when hovering over the thumbnail images */
