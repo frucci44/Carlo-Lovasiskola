@@ -13,7 +13,9 @@ if (  $email && $jelszo ) {
     if ($felhasznalo->num_rows != 0) {
         $felhasznalo_adat = $felhasznalo->fetch_assoc();
 
+     
      $_SESSION["nev"] = $felhasznalo_adat["nev"];
+     $_SESSION["email"] = $felhasznalo_adat["email"];
      $_SESSION["vanoktato"] = $felhasznalo_adat["oktato_id"]!= null ;
 
      ?>

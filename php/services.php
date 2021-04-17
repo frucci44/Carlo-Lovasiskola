@@ -1,10 +1,24 @@
+
+<?php include '../database/mysql.php'; ?>
 <?php include 'menu.php'; ?>
+
+
 <div class="container">
  
  <?php
 
   if (benvanejelentkezve()) {
     if($_SESSION['vanoktato']){
+        $email=$_SESSION['email'];
+ $sql="SELECT f.nev , f.telefonszam , o.nev as oktatonev FROM felhasznalo f JOIN oktato o on o.id = f.oktato_id where  f.email= '$email'"; 
+
+ $felhasznalo = $db->query($sql);
+
+      $felhasznalo_adat = $felhasznalo->fetch_assoc();
+      $nev=$felhasznalo_adat["nev"];
+            $tel=$felhasznalo_adat["telefonszam"];
+            $okt=$felhasznalo_adat["oktatonev"];
+            
       ?>
       <h1 class="text-center">Időpontfoglalás</h1>
                
@@ -16,7 +30,7 @@
                         <label  class="font-weight-bold">Név:</label>
                                     </div>
                         <div class="col-12 col-md-8">
-                        <label >valami</label>
+                        <label ><?=$nev ?></label>
 
 
                                     </div>
@@ -26,7 +40,7 @@
                         <label  class="font-weight-bold">Telefonszám:</label>
                                     </div>
                         <div class="col-12 col-md-8">
-                        <label >valami1</label>
+                        <label ><?=$email ?></label>
 
 
                                     </div>
@@ -36,7 +50,7 @@
                         <label  class="font-weight-bold">Oktató neve:</label>
                                     </div>
                         <div class="col-12 col-md-8">
-                        <label >valami2</label>
+                        <label ><?=$okt ?></label>
 
 
                                     </div>
@@ -46,8 +60,14 @@
                         <div class="col-12 col-md-4 text-center text-md-left">
                         <label for="idopont" class="font-weight-bold">időpont:</label>
                                     </div>
-                        <div class="col-12 col-md-8">
-                        <input type="date" name="datum" id="datum" required>
+                        <div class="col-12 col-md-4">
+                        <input type="date" name="datum" id="datum"  required min="<?=date("Y-m-d")?>">
+                        
+
+
+                                    </div>
+                                    <div class="col-12 col-md-2">
+                
                         <input type="time" name="idopont" id="idopont" required min="07:00" max="18:00">
 
 
@@ -84,7 +104,7 @@
 <h1 class="text-center">Bemutatkozás</h1>
                 <p class="text-center">Kérem minden részt töltsön ki.</p>
                 <hr>
-                <form method="POST" action="login2.php">
+                <form method="POST" action="firstemail.php">
                    
                     <div class="row">
                         <div class="col-12 col-md-4 text-center text-md-left">
@@ -128,10 +148,11 @@
                   
                       <div class="row">
                         <div class="col-12 col-md-4 text-center text-md-left">
-                        <label for="kor" class="font-weight-bold">Magamról:</label>
+                        <label for="magam" class="font-weight-bold">Magamról:</label>
                                     </div>
                         <div class="col-12 col-md-8">
                       <textarea name="magam" id="magam" cols="100" rows="10"></textarea>
+
 
 
                                     </div>
@@ -158,7 +179,7 @@
 
   else {
 ?>
-<div class="container">
+
 <h1>Szolgáltatásaink</h1>
 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis unde atque quia corrupti eveniet repellat nemo reprehenderit illum necessitatibus enim dicta sapiente qui facere, vitae nostrum voluptates omnis eius obcaecati.</p>
 Ha szeretnél időpontot foglalni akkor <a href="login.php" class="reg">Jelentkezz be! </a>
