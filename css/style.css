@@ -2,6 +2,9 @@
     font-family: 'Roboto', sans-serif;
     src: url(../fonts/Roboto-Light.ttf) format(ttf);
 }
+html {
+    min-height: calc(100% - 145px);
+}
 
 .navbar {
     position: fixed;
@@ -43,7 +46,17 @@ html:not([data-scroll='0']) .logo {
         margin-top: -10px !important;
     }
 }
-
+.footer {
+   
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: lightgray;
+    color: black;
+    text-align: right;
+    height: 50px;
+    line-height: 50px;
+  }
 
 
 
@@ -87,6 +100,7 @@ header .backg {
 
 body {
     background-color: mistyrose;
+    min-height: calc(100% - 145px);
 }
 
 a, a:hover, a:visited, a:active {

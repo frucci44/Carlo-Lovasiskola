@@ -11,19 +11,24 @@
     if($_SESSION['vanoktato']){
         $email=$_SESSION['email'];
  $sql="SELECT f.nev , f.telefonszam , o.nev as oktatonev FROM felhasznalo f JOIN oktato o on o.id = f.oktato_id where  f.email= '$email'"; 
-
+ $sqlido="SELECT foglalas_kezdete , foglalas_vege from  rendszer_beallitasok "; 
  $felhasznalo = $db->query($sql);
 
       $felhasznalo_adat = $felhasznalo->fetch_assoc();
       $nev=$felhasznalo_adat["nev"];
             $tel=$felhasznalo_adat["telefonszam"];
             $okt=$felhasznalo_adat["oktatonev"];
+
+            $ido = $db->query($sqlido);
+            $ido_adat = $ido->fetch_assoc();
+            $kezdete=$ido_adat["foglalas_kezdete"];
+            $vege=$ido_adat["foglalas_vege"];
             
       ?>
       <h1 class="text-center">Időpontfoglalás</h1>
                
                 <hr>
-                                <form method="POST" action="login2.php">
+                                <form method="POST" action="reservation.php">
                    
                     <div class="row">
                         <div class="col-12 col-md-4 text-center text-md-left">
@@ -68,7 +73,7 @@
                                     </div>
                                     <div class="col-12 col-md-2">
                 
-                        <input type="time" name="idopont" id="idopont" required min="07:00" max="18:00">
+                        <input type="time" name="idopont" id="idopont" required min="<?= str_pad($kezdete , 2 , '0' , STR_PAD_LEFT) ?>:00" max= "<?= $vege ?>:00 ">
 
 
                                     </div>
