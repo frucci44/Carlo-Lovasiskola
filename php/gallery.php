@@ -68,7 +68,7 @@
     </div>
   </div>
 </div>
-
+<script src="../js/slideshow.js"></script>
 <form action="upload.php" method="post" enctype="multipart/form-data">
   Kép feltöltés:
   <input type="file" name="fileToUpload" id="fileToUpload">
