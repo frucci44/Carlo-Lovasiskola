@@ -1,7 +1,10 @@
 
 
 <div class="footer">
-  <p>© MINDEN JOG FENNTARTVA.</p>
+<a href="https://www.facebook.com/CarloLovassportEgyesulet" target="_blank">
+        <span class="fab fa-facebook-square"></span>
+    </a>
+  © MINDEN JOG FENNTARTVA.
 </div>
 
   

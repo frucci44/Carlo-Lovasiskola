@@ -11,10 +11,12 @@
     
     <link rel="stylesheet" href="<?= $mappa ?? ''?>../lib/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?= $mappa ?? ''?>../lib/fontawsome/css/all.min.css">
-    <link rel="stylesheet" href="<?= $mappa ?? ''?>../css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+   
   
     <script src="<?= $mappa ?? ''?>../lib/jquery/dist/jquery.min.js"></script>
     <script src="<?= $mappa ?? ''?>../lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../js/slideshow.js"></script>
   
     <title>Carlo Lovassport Egyesület</title>
 </head>

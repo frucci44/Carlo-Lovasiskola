@@ -23,6 +23,8 @@ if ( $datum && $ido) {
             $hossz=$ido_adat["ora_hossza"];
 
             $megfelelo_kezdete = strtotime($kezdete.":00");
+
+            
             $megfelelo_vege = strtotime($vege.":00");
             $megadott_ido = strtotime("".$ido);
 

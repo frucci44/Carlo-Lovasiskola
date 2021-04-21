@@ -63,6 +63,9 @@
     </tr>
   </tbody>
 </table>
+<img src="../img/lovardaterkep1.jpg" alt="terkep" class="img-thumbnail">
+<a href="https://www.google.hu/maps/place/R%C3%A1ckeve,+Sillingi+%C3%BAt+26,+2300/@47.1855289,18.9363882,3a,75y,52.85h,90t/data=!3m7!1e1!3m5!1sJ1HHsmnmxH-kZl08qfCTlg!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3DJ1HHsmnmxH-kZl08qfCTlg%26cb_client%3Dmaps_sv.tactile.gps%26w%3D203%26h%3D100%26yaw%3D52.848198%26pitch%3D0%26thumbfov%3D100!7i13312!8i6656!4m5!3m4!1s0x4741f7656e3090b7:0x9274e6c407972c51!8m2!3d47.1858958!4d18.9371544?hl=hu" target="_blank">Lovarda megtekintése a Google Térképen!</a> 
+
         </div>
     </div>
 

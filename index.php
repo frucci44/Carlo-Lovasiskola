@@ -5,9 +5,7 @@
 <?php include "php/menu.php" ?>
 
     <div class="container">
-        <a href="https://www.facebook.com/CarloLovassportEgyesulet">
-        <span class="fab fa-facebook-square"></span>
-    </a>
+      
 
         <div class="header">
         <body>
