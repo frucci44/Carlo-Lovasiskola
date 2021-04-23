@@ -32,10 +32,10 @@ CREATE TABLE `felhasznalo` (
   `email` varchar(255) NOT NULL,
   `jelszo` varchar(2000) NOT NULL,
   `aktiv` tinyint(1) DEFAULT NULL,
-  `nev` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `telefonszam` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `nev` varchar(200) CHARACTER SET utf8mb4 NOT NULL,
+  `telefonszam` varchar(20) CHARACTER SET utf8mb4 NOT NULL,
   `oktato_id` int DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -48,7 +48,7 @@ CREATE TABLE `felhasznalo_beallitas` (
   `felhasznalo_id` int NOT NULL,
   `utolso_bejelentkezes` datetime NOT NULL,
   `ker_hirlevelet` tinyint(1) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -62,7 +62,7 @@ CREATE TABLE `foglalas` (
   `vege` int NOT NULL,
   `oktato_id` int NOT NULL,
   `felhasznalo_id` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -76,7 +76,7 @@ CREATE TABLE `galeria` (
   `leiras` varchar(200) NOT NULL,
   `kep` mediumblob NOT NULL,
   `kategoriaID` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -87,7 +87,7 @@ CREATE TABLE `galeria` (
 CREATE TABLE `kategoria` (
   `id` int NOT NULL,
   `nev` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -101,7 +101,7 @@ CREATE TABLE `lo` (
   `kep` mediumblob NOT NULL,
   `oktato_id` int DEFAULT NULL,
   `bemutatkozas` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -114,7 +114,7 @@ CREATE TABLE `oktato` (
   `nev` varchar(200) NOT NULL,
   `kep` mediumblob NOT NULL,
   `bemutatkozas` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -127,7 +127,7 @@ CREATE TABLE `rendszer_beallitasok` (
   `foglalas_kezdete` int NOT NULL,
   `foglalas_vege` int NOT NULL,
   `ora_hossza` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Indexek a kiírt táblákhoz
