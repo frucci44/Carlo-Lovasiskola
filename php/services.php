@@ -73,7 +73,7 @@
                                     </div>
                                     <div class="col-12 col-md-2">
                 
-                        <input type="time" name="idopont" id="idopont" required min="<?= str_pad($kezdete , 2 , '0' , STR_PAD_LEFT) ?>:00" max= "<?= $vege ?>:00 ">
+                        <input type="time" name="idopont" id="idopont" required min="<?= str_pad($kezdete , 2 , '0' , STR_PAD_LEFT) ?>:00" max="<?= $vege ?>:00">
 
 
                                     </div>

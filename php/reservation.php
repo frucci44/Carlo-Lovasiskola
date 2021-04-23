@@ -2,87 +2,82 @@
 <?php include 'menu.php'; ?>
 <div class="container">
 <?php
-$datum=$_POST['datum'];
-$ido=$_POST['idopont'];
+  $datum=$_POST['datum'];
+  $ido=$_POST['idopont'];
 
-if ( $datum && $ido) {
- $idopont =new DateTime($datum." ".$ido) ;
- if ($idopont< new DateTime()) {
-
-    ?>
-    <h1>Az időpont nem lehet a múltban!</h1>
-    <?php
- }
- else {
-     $sqlido="SELECT foglalas_kezdete , foglalas_vege , ora_hossza from  rendszer_beallitasok "; 
-
-    $ido = $db->query($sqlido);
-            $ido_adat = $ido->fetch_assoc();
-            $kezdete=$ido_adat["foglalas_kezdete"];
-            $vege=$ido_adat["foglalas_vege"];
-            $hossz=$ido_adat["ora_hossza"];
-
-            $megfelelo_kezdete = strtotime($kezdete.":00");
-
-            
-            $megfelelo_vege = strtotime($vege.":00");
-            $megadott_ido = strtotime("".$ido);
-
-            if ($megadott_ido < $megfelelo_kezdete )
-          
-        {
-            ?>
-            <h1>Nem jó időpontot választott!</h1>
-            <?php
-
-
-        }
-
-elseif ($megadott_ido > $megfelelo_vege){
-    ?>
-    <h1>Nem jó időpontot választott!</h1>
-    <?php
-
-}
-else {
-   
-}
+  if ($datum && $ido) {
+    $datumido=$datum." ".$ido;
+    $idopont =new DateTime($datumido) ;
+    if ($idopont< new DateTime()) {
+      ?>
+      <h1>Az időpont nem lehet a múltban!</h1>
+      <?php
     }
+   else {
+      $sqlido="SELECT foglalas_kezdete, foglalas_vege, ora_hossza from rendszer_beallitasok" ; 
 
-}
+      $ido_lekerdezes = $db->query($sqlido);
+      $ido_adat = $ido_lekerdezes ->fetch_assoc();
+      $kezdete=$ido_adat["foglalas_kezdete"];
+      $vege=$ido_adat["foglalas_vege"];
+      $hossz=$ido_adat["ora_hossza"];
 
+      $megfelelo_kezdete = strtotime($kezdete.":00");
+      $megfelelo_vege = strtotime($vege.":00");
+      $megadott_ido = strtotime("".$ido);
 
+      if ($megadott_ido < $megfelelo_kezdete )
+      {
+            ?>
+            <h1>Nem jó időpontot választott!a</h1>
+            <?php
+      }
+      elseif ($megadott_ido > $megfelelo_vege){
+            ?>
+            <h1>Nem jó időpontot választott!b</h1>
+          <?php
+      }
+      else {
+        if (false) {
+          ?>
+          <h1>Ez az időpont már foglalt!</h1>
+          <?php
+        }
+        else {
+          $email=$_SESSION['email'];
 
-else {
-  if (false) {
-    ?>
-    <h1>Ez az időpont már foglalt!</h1>
-    <?php
+          $sql="SELECT * FROM felhasznalo where email= '$email' ";
+          $felhasznalo = $db->query($sql);
+          $felhasznalo_adat = $felhasznalo->fetch_assoc();
+          $felhasznalo_id=$felhasznalo_adat["id"];
+          $oktato_id=$felhasznalo_adat["oktato_id"];
+         
+          
+
+          $ora_Vege = $idopont->add(new DateInterval("PT{$hossz}M"));
+          $ora_Vegeszoveg = $ora_Vege->format("Y-m-d H:i");
+          $foglalas="INSERT INTO foglalas (kezdete , vege , oktato_id , felhasznalo_id) values ('$datumido' , '$ora_Vegeszoveg' , '$oktato_id' , '$felhasznalo_id')";
+          $darabszam = $db->query($foglalas);
+       if ($darabszam == 0) {
+        ?>
+        <h2>Sikertelen időpontfoglalás! </h2>
+          <a href="#" onclick="location.reload()"> Újrapróbálkozás! </a>
+          <?php
+          }
+        else {
+          ?>
+          <h2>Sikeres Időpontfoglalás! </h2>
+          <?php
+         }
+        }
+       }
+     }
   }
   else {
-    $foglalas="INSERT INTO foglalas (kezdete , vege , oktato_id , felhasznalo_id) values ('$email', '$jelszo_hash', 1, '$nev', '$tel')";
-
-    $darabszam = $db->query($foglalas);
-    if ($darabszam == 0) {
-     ?>
-     <h2>Sikertelen időpontfoglalás! </h2>
-     <a href="#" onclick="location.reload()"> Újrapróbálkozás! </a>
-     <?php
- 
-    }
-    else {
-     ?>
-     <h2>Sikeres Időpontfoglalás! </h2>
-     
-     <?php
- 
-    }
-  }
-}
-
-
-
-
+    ?>
+    <h2>Kérem adja meg az időpontot </h2>
+    <?php
+   }
 ?>
 </div>
 <?php include 'footer.php'; ?> 

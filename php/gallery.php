@@ -69,10 +69,28 @@
   </div>
 </div>
 <script src="../js/slideshow.js"></script>
+
+<?php 
+if (benvanejelentkezve()) {
+
+
+
+?>
 <form action="upload.php" method="post" enctype="multipart/form-data">
   Kép feltöltés:
   <input type="file" name="fileToUpload" id="fileToUpload">
   <input type="submit" value="Upload Image" name="submit">
 </form>
+
+<?php } 
+else {
+  ?>
+ <p> Ha szeretnél a galériába képet feltölteni, akkor kérlek <a href="login.php" class="reg">Jelentkezz be! </a></p>
+<?php
+
+}
+?>
+
+
 
 <?php include 'footer.php'; ?>
