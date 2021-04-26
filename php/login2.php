@@ -4,7 +4,6 @@
 $email=$_POST['email'];
 $jelszo=$_POST['jelszo'];
 
-
 if (  $email && $jelszo ) {
     $jelszo_hash = md5($jelszo);
     $sql="SELECT * FROM felhasznalo where aktiv and jelszo = '$jelszo_hash' and email = '$email' ";
@@ -13,7 +12,6 @@ if (  $email && $jelszo ) {
     if ($felhasznalo->num_rows != 0) {
         $felhasznalo_adat = $felhasznalo->fetch_assoc();
 
-     
      $_SESSION["nev"] = $felhasznalo_adat["nev"];
      $_SESSION["email"] = $felhasznalo_adat["email"];
      $_SESSION["vanoktato"] = $felhasznalo_adat["oktato_id"]!= null ;
@@ -22,8 +20,7 @@ if (  $email && $jelszo ) {
      <h2>Sikeres Bejelentkezés</h2>
      <a href="../index.php" > Főoldal</a>
      <?php
-     
-         
+              
     }
     else {
     ?>
@@ -41,12 +38,7 @@ if (  $email && $jelszo ) {
     }
     
     ?>
-    
-    
-                <div class="container">
+     <div class="container">
                 </div>
-    
-               
-    
-    
+                         
                 <?php include 'footer.php'; ?>

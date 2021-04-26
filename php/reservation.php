@@ -51,8 +51,7 @@
           $felhasznalo_adat = $felhasznalo->fetch_assoc();
           $felhasznalo_id=$felhasznalo_adat["id"];
           $oktato_id=$felhasznalo_adat["oktato_id"];
-         
-          
+                  
 
           $ora_Vege = $idopont->add(new DateInterval("PT{$hossz}M"));
           $ora_Vegeszoveg = $ora_Vege->format("Y-m-d H:i");

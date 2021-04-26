@@ -29,12 +29,7 @@ if ($jelszo == $jelszou) {
     <?php
 
    }
-
-
-
-    
-    
-
+ 
 }
 else {
 ?>
