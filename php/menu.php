@@ -77,7 +77,7 @@ function benvanejelentkezve() {
 <div class="head-padding"></div>
 <header>
   <div class="backg"></div>
-  <h1 class="glow">♡ Carlo Lovassport Egyesület ♡</h1>
+  <h1 class="glow">♘Carlo Lovassport Egyesület ♡</h1>
 </header>
 </div>
 </header>

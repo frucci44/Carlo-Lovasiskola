@@ -186,7 +186,9 @@
 ?>
 
 <h1>Szolgáltatásaink</h1>
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis unde atque quia corrupti eveniet repellat nemo reprehenderit illum necessitatibus enim dicta sapiente qui facere, vitae nostrum voluptates omnis eius obcaecati.</p>
+<p>Ha szeretnél egy jó társaság tagja lenni akkor foglalj időpontot lovaglásra.Itt azt is
+figyeljük, hogy a ló szeretete is benned legyen ne csak az,hogy üzzük őket mintha gépek lennének.
+Legyél bármilyen szinten Kezdő vagy Haladó szívesen várunk lovasórára.   </p>
 Ha szeretnél időpontot foglalni akkor <a href="login.php" class="reg">Jelentkezz be! </a>
 
 <?php
