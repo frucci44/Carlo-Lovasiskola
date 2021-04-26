@@ -74,13 +74,10 @@
                 
                         <input type="time" name="idopont" id="idopont" required min="<?= str_pad($kezdete , 2 , '0' , STR_PAD_LEFT) ?>:00" max= "<?= $vege ?>:00 ">
 
-
                                     </div>
                     </div>
                   
-                  
-
-                    <div class="row">
+                                    <div class="row">
                         <div class="col-12 col-md-4">
                                     </div>
                         <div class="col-12 col-md-8 text-center text-md-left">
@@ -88,11 +85,7 @@
                             <button class="btn btn-secondary"  style="margin-bottom:20px;" type="submit" >Foglalás</button>
                                     </div>
                     </div>
-
-
-
-              
-                             
+                                         
                 
             </div>
 
@@ -142,12 +135,7 @@
                         <option value="Haladó">Haladó</option>
                         <option value="Profi">Profi</option>
                         </select>
-
-                      
-
-
-
-                                    </div>
+                                                          </div>
                     </div>
                   
                       <div class="row">
@@ -156,8 +144,6 @@
                                     </div>
                         <div class="col-12 col-md-8">
                       <textarea name="magam" id="magam" cols="100" rows="10"></textarea>
-
-
 
                                     </div>
                     </div>
@@ -170,7 +156,7 @@
                             <button class="btn btn-secondary"  style="margin-bottom:20px;" type="submit" >Küldés</button>
                                     </div>
                     </div>
-                                      
+                                    
                 
             </div>
           

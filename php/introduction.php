@@ -1,10 +1,7 @@
 
 <?php include 'menu.php'; ?>
 <?php include '../database/mysql.php'; ?>
-
 <?php
-
-
 
 $sql_oktato="SELECT o.nev, o.bemutatkozas, o.kep , l.id FROM oktato o LEFT JOIN lo l ON o.id = l.oktato_id WHERE l.id is null";
 $sql_lovak="SELECT nev, bemutatkozas, kep  FROM lo WHERE oktato_id is null";
@@ -12,10 +9,6 @@ $oktatok = $db->query($sql_oktato);
 $lovak = $db->query($sql_lovak);
 
 ?>
-
-
-
-
 
 <div class="container">
 <h1>Edzőink</h1>
@@ -31,9 +24,9 @@ if($oktatok->num_rows == 0) {
     <div class="col-12 col-md-3" >
         <img class="bemutatkep" src="data:image;base64,<?=base64_encode($oktato["kep"] )?>" /> 
     </div>
-                  
+               
     <div class="col-12 col-md-9" >
-             
+            
         <div class="row"> 
             <div class="col-12">
                 <h1><?=$oktato["nev"] ?></h1>
@@ -42,20 +35,17 @@ if($oktatok->num_rows == 0) {
                 
                  <p><?=$oktato["bemutatkozas"] ?></p>
             </div>
-            
+          
             
         </div>
     </div>
 </div>
 <br>
 
-
-
 <?php
     }
 }
    ?>
-
 <hr/>
 <h1>Lovaink</h1>
 <?php
@@ -78,12 +68,9 @@ if($lovak->num_rows == 0) {
                 <h1><?=$lo["nev"] ?></h1>
             </div>
              <div class="col-12">
-                
-                 <p><?=$lo["bemutatkozas"] ?></p>
+                   <p><?=$lo["bemutatkozas"] ?></p>
             </div>
-            
-            
-        </div>
+             </div>
     </div>
 </div>
 <br>
@@ -94,7 +81,5 @@ if($lovak->num_rows == 0) {
     }
 }
    ?>
-
    </div>
-
    <?php include 'footer.php'; ?>

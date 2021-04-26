@@ -1,20 +1,12 @@
 <?php
     $mappa = "php/";
 ?>
-
 <?php include "php/menu.php" ?>
 
     <div class="container">
-      
-
-        <div class="header">
+              <div class="header">
         <body>
     <title>Carlo Lovarda</title>
-
-
-
-
-
     <div class="container">
         <div class="row">
             <div class="col">
@@ -58,8 +50,13 @@
         </div>
     </div>
 </body>
+<<<<<<< HEAD
 
 
 </html>
 
+
+=======
+</html>
+>>>>>>> 64c213a05c4b095bcf793ee743088ddc590bf24f
 <?php include 'php/footer.php'; ?>
