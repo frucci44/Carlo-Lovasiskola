@@ -79,7 +79,7 @@ if (benvanejelentkezve()) {
 <form action="upload.php" method="post" enctype="multipart/form-data">
   Kép feltöltés:
   <input type="file" name="fileToUpload" id="fileToUpload">
-  <input type="submit" value="Upload Image" name="submit">
+  <input type="submit" value="Kép kiválasztása:" name="submit">
 </form>
 
 <?php } 
