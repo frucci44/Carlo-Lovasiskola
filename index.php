@@ -27,22 +27,22 @@
         </div>
             <div class="col-12 col-md-6">
                 <div class="row">
-                    <div class="col-6">
-                        <img class="img-thumbnail" src="img/lovardakép.jpg" width="240" height="240"
-                             style="float: right" alt="Carlo Lovarda" title="Carlo Lovarda">                                     
+                    <div class="col-6 text-right" style="margin-bottom: 25px;">
+                        <img class="img-thumbnail" src="img/lovardakép.jpg" "
+                              alt="Carlo Lovarda" title="Carlo Lovarda">                                     
                         
                              </div>
                 <div class="col-6">
-                <img class="img-thumbnail" src="img/lovarda2.jpg" width="240" height="240"
-                             style="float: right" alt="Carlo Lovarda" title="Carlo Lovarda">                  
+                <img class="img-thumbnail" src="img/lovarda2.jpg" 
+                              title="Carlo Lovarda">                  
+                    </div>
+                <div class="col-6 text-right">
+                <img class="img-thumbnail" src="img/lovarda3.jpg"
+                              alt="Carlo Lovarda" title="Carlo Lovarda">
                     </div>
                 <div class="col-6">
-                <img class="img-thumbnail" src="img/lovarda3.jpg" width="240" height="240"
-                             style="float: left" alt="Carlo Lovarda" title="Carlo Lovarda">
-                    </div>
-                <div class="col-6">
-                <img class="img-thumbnail" src="img/carlo2.jpg" width="240" height="240"
-                             style="float: left" alt="Carlo Lovarda" title="Carlo Lovarda">
+                <img class="img-thumbnail" src="img/carlo2.jpg" 
+                              alt="Carlo Lovarda" title="Carlo Lovarda">
                     </div>
                 </div>
             </div>

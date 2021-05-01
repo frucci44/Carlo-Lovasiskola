@@ -5,6 +5,9 @@
 html {
     min-height: calc(100% - 145px);
 }
+.navbar-collapse {
+    background-color: #fafafa;
+}
 
 .navbar {
     position: fixed;
@@ -124,11 +127,16 @@ input:focus, button:focus, submit:focus {
 }
 
 .nav-item .nav-link:hover {
-    -ms-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-    color: #a23b1b;
+      color: #a23b1b;
     transition: all 0.3s ease-in-out;
+}
+
+@media (min-width: 992px) {
+    .nav-item .nav-link:hover {
+        -ms-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
 }
 
 .fa-facebook-square {
@@ -154,9 +162,15 @@ h2{
 }
 
 .glow {
-  text-align: center;  
+  text-align: center; 
+   
   
 
+}
+@media(max-width: 483px){
+    .glow{
+        font-size: 50pt  !important;
+    }
 }
 img {
     border-radius: 8px;
