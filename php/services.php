@@ -88,7 +88,7 @@
     }
     else {
 ?>
-<h1 class="text-center">Bemutatkozás</h1>
+<h1 class="text-center">Bejelentkezés</h1>
                 <p class="text-center">Kérem minden részt töltsön ki.</p>
                 <hr>
                 <form method="POST" action="firstemail.php">
